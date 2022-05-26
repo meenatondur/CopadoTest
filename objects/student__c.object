@@ -143,59 +143,171 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>create for Demo purpose</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Field_One__c</fullName>
-        <defaultValue>false</defaultValue>
+        <fullName>age__c</fullName>
         <externalId>false</externalId>
-        <label>Field One</label>
+        <label>age</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
         <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Field_Six__c</fullName>
-        <defaultValue>false</defaultValue>
+        <fullName>branch1__c</fullName>
         <externalId>false</externalId>
-        <label>Field Six</label>
+        <label>branch1</label>
+        <referenceTo>branch1__c</referenceTo>
+        <relationshipLabel>students</relationshipLabel>
+        <relationshipName>students</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
-        <fullName>Field_Two__c</fullName>
+        <fullName>emal_id__c</fullName>
+        <caseSensitive>true</caseSensitive>
         <externalId>false</externalId>
-        <label>Field Two</label>
+        <label>emal_id</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Email</type>
-        <unique>false</unique>
+        <unique>true</unique>
     </fields>
-    <label>Demo Object</label>
+    <fields>
+        <fullName>fee_paid__c</fullName>
+        <externalId>false</externalId>
+        <label>fee paid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>fee_paid_onf__c</fullName>
+        <externalId>false</externalId>
+        <label>fee paid on</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>gender__c</fullName>
+        <externalId>false</externalId>
+        <label>gender</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>male</fullName>
+                    <default>false</default>
+                    <label>male</label>
+                </value>
+                <value>
+                    <fullName>female</fullName>
+                    <default>false</default>
+                    <label>female</label>
+                </value>
+                <value>
+                    <fullName>others</fullName>
+                    <default>false</default>
+                    <label>others</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>marks_score__c</fullName>
+        <externalId>false</externalId>
+        <label>marks score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>phone_number__c</fullName>
+        <externalId>false</externalId>
+        <label>phone number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <label>student</label>
     <nameField>
-        <label>Demo Custom  Name</label>
+        <label>student Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Demo Objects</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
-    <validationRules>
-        <fullName>DemoValidationRuleOne</fullName>
+    <pluralLabel>students</pluralLabel>
+    <recordTypes>
+        <fullName>user_1</fullName>
         <active>true</active>
-        <description>created for Demo.</description>
-        <errorConditionFormula>AND(
- Field_One__c,
- ISBLANK(Field_Two__c)
-)</errorConditionFormula>
-        <errorMessage>Please enter Field two if Field one is checked.</errorMessage>
+        <label>user 1</label>
+        <picklistValues>
+            <picklist>gender__c</picklist>
+            <values>
+                <fullName>female</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>male</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>others</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>user_2</fullName>
+        <active>true</active>
+        <label>user 2</label>
+        <picklistValues>
+            <picklist>gender__c</picklist>
+            <values>
+                <fullName>female</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>male</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>others</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>phone</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(ISBLANK( phone_number__c ) 
+,LEN( phone_number__c )   &lt;&gt; 10 ,
+!ISNUMBER ( phone_number__c ) )</errorConditionFormula>
+        <errorDisplayField>phone_number__c</errorDisplayField>
+        <errorMessage>write phone number in a proper format</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>
