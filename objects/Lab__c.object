@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Floor__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blood test</fullName>
+                    <default>false</default>
+                    <label>Blood test</label>
+                </value>
+                <value>
+                    <fullName>CT scan</fullName>
+                    <default>false</default>
+                    <label>CT scan</label>
+                </value>
+                <value>
+                    <fullName>Xray</fullName>
+                    <default>false</default>
+                    <label>Xray</label>
+                </value>
+                <value>
+                    <fullName>Ultra sound</fullName>
+                    <default>false</default>
+                    <label>Ultra sound</label>
+                </value>
+                <value>
+                    <fullName>ECG Scan</fullName>
+                    <default>false</default>
+                    <label>ECG Scan</label>
+                </value>
+                <value>
+                    <fullName>MRI SCan</fullName>
+                    <default>false</default>
+                    <label>MRI SCan</label>
+                </value>
+                <value>
+                    <fullName>urine test</fullName>
+                    <default>false</default>
+                    <label>urine test</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Level 1</controllingFieldValue>
+                <valueName>Blood test</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Level 1</controllingFieldValue>
+                <valueName>CT scan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Level 1</controllingFieldValue>
+                <valueName>Xray</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Level 1</controllingFieldValue>
+                <valueName>Ultra sound</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Level 2</controllingFieldValue>
+                <valueName>ECG Scan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Level 2</controllingFieldValue>
+                <valueName>MRI SCan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Level 2</controllingFieldValue>
+                <valueName>urine test</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Doctor_id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Doctor id</label>
+        <referenceTo>Doctor__c</referenceTo>
+        <relationshipLabel>patient</relationshipLabel>
+        <relationshipName>Labs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Floor__c</fullName>
+        <description>Describing the floors in the hospital</description>
+        <externalId>false</externalId>
+        <label>Floor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Level 1</fullName>
+                    <default>false</default>
+                    <label>Level 1</label>
+                </value>
+                <value>
+                    <fullName>Level 2</fullName>
+                    <default>false</default>
+                    <label>Level 2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lab_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Lab Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ganga labs</fullName>
+                    <default>false</default>
+                    <label>Ganga labs</label>
+                </value>
+                <value>
+                    <fullName>saraswathi labs</fullName>
+                    <default>false</default>
+                    <label>saraswathi labs</label>
+                </value>
+                <value>
+                    <fullName>jamuna labs</fullName>
+                    <default>false</default>
+                    <label>jamuna labs</label>
+                </value>
+                <value>
+                    <fullName>Godavari labs</fullName>
+                    <default>false</default>
+                    <label>Godavari labs</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Test_numebr__c</fullName>
+        <externalId>false</externalId>
+        <label>Test number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>approval_status__c</fullName>
+        <externalId>false</externalId>
+        <label>approval status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>processing</fullName>
+                    <default>false</default>
+                    <label>processing</label>
+                </value>
+                <value>
+                    <fullName>approved</fullName>
+                    <default>false</default>
+                    <label>approved</label>
+                </value>
+                <value>
+                    <fullName>rejected</fullName>
+                    <default>false</default>
+                    <label>rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>patient_id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>patient_id</label>
+        <referenceTo>Patient__c</referenceTo>
+        <relationshipLabel>Labs</relationshipLabel>
+        <relationshipName>Labs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>weight__c</fullName>
+        <externalId>false</externalId>
+        <label>weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Lab</label>
+    <nameField>
+        <label>Lab number</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Labs</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>date_cannot_be_in_the_past</fullName>
+        <active>true</active>
+        <description>daate cannot be in the past</description>
+        <errorConditionFormula>Date__c  &lt;  TODAY()</errorConditionFormula>
+        <errorMessage>date should not be in the past</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>date_validation_rules</fullName>
+        <active>true</active>
+        <errorConditionFormula>YEAR( Date__c )  &lt;&gt;  YEAR( TODAY() )</errorConditionFormula>
+        <errorMessage>date should be in the current year</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>
